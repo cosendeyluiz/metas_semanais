@@ -14,20 +14,15 @@ int main(){
        }
        somacol[i] = 0;
        somalin[i] = 0;
-
    }
    
    for(int i = 0; i < N; i++){
        for(int j = 0; j < N; j++){
            somacol[i] += tab[i][j];
            somalin[i] += tab[j][i];
-          
-    
-       }
-      
+       }  
    }
 
-   
    for(int i = 0; i < N; i++){
        for(int j = 0; j < N; j++){
           if(maior < (somacol[i] + somalin[j] - 2*tab[i][j])){
